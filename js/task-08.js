@@ -11,7 +11,6 @@ formEl.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
     event.preventDefault();
-    console.log('Submit')
     const formElement = event.currentTarget.elements;
     console.dir(formElement);
     const mail = formElement.email.value;

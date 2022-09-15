@@ -6,7 +6,6 @@ quantityCategories.forEach(function (quantityCategories, index) {
     const ElemtsCategori = quantityCategories.querySelectorAll('.item li');
 console.log(`Category ${nameCategories.textContent}`);
 console.log(`Elements: ${ElemtsCategori.length}`);
-// console.log(ElemtsCategori); 
 })
 
 
