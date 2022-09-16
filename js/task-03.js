@@ -16,11 +16,9 @@ const imagesGallery = document.querySelector('.gallery');
 
 console.log(imagesGallery);
 
-const catGallery = 
-  images.forEach(function (image, index) {
-   const imgEl = document.createElement('img');
+const catGallery = images.map(function ({url, alt}) {
    const liHtml = `<li class = imgLi>
-   <img class = img src=${images[index].url} alt=${images[index].alt} width = 1260>
+   <img class = img src=${url} alt=${alt} width = 1260>
     </li>` 
     imagesGallery.insertAdjacentHTML("beforeend", liHtml);
        
@@ -34,6 +32,14 @@ imagesGallery.style.gridTemplateColumns = 'repeat(1)';
 imagesGallery.style.gridAutoRows = 'minmax(300px, auto)';
 imagesGallery.style.gridRowGap = '3em';
  
-
+// const catGallery = 
+//   images.forEach(function (image, index) {
+//    const imgEl = document.createElement('img');
+//    const liHtml = `<li class = imgLi>
+//    <img class = img src=${images[index].url} alt=${images[index].alt} width = 1260>
+//     </li>` 
+//     imagesGallery.insertAdjacentHTML("beforeend", liHtml);
+       
+//   })
  
  

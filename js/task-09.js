@@ -9,10 +9,10 @@ const refs = {
 refs.changeColorClickrBtn.addEventListener("click", onChangeColorClick);
 
 function onChangeColorClick() {
-  // const randomColor = getRandomHexColor();
-  console.log(`New color body: ${getRandomHexColor()}`);
-  document.body.style.background = getRandomHexColor();
-  refs.newNameColor.textContent = getRandomHexColor() ;
+  const randomColor = getRandomHexColor();
+  console.log(`New color body: ${randomColor}`);
+  document.body.style.background = randomColor;
+  refs.newNameColor.textContent = randomColor;
 }
 
 function getRandomHexColor() {
