@@ -34,7 +34,7 @@ function createBoxes(amount) {
 
   for (let i = 0; i < amount; i += 1) {
     newDiv += `<div style="width: ${divSize}px; height: ${divSize}px; background-color: ${getRandomHexColor()};">
-    <span>${i+1}<span>
+    ${i+1}
     </div>`;
     divSize += 10;
   }
