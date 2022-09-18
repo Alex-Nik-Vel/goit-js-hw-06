@@ -22,13 +22,14 @@ const imagesGallery = document.querySelector('.gallery');
 
 console.log(imagesGallery);
 
-const catGallery = images.map(function ({url, alt}) {
-   return `<li class = imgLi>
+const catGallery = images.map(function ({ url, alt }) {
+  const liGalellery = `<li class = imgLi>
    <img class = img src=${url} alt=${alt} width = 1260>
-    </li>` 
+    </li>` ;
+  return liGalellery;
 })
    imagesGallery.insertAdjacentHTML("beforeend", catGallery);
-       console.log('catGallery', catGallery)
+console.log('catGallery', catGallery.join(''));
  
 imagesGallery.style.listStyle = "none";
 imagesGallery.style.margin = '0';

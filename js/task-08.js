@@ -20,6 +20,7 @@ function onFormSubmit(event) {
     const formData = {
         mail,
         pass,
+        date:new Date(),
     };
     console.log(formData);
     formEl.reset();
